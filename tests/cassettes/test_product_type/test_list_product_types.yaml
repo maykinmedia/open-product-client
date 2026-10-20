@@ -1,0 +1,107 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Language:
+      - nl
+      Authorization:
+      - Token 75167ed1457337f6c27022ae772ba79a351b053a
+    method: GET
+    uri: http://localhost:8339/producttypen/api/v1/producttypen
+  response:
+    body:
+      string: '{"count":2,"next":null,"previous":null,"results":[{"uuid":"5d42a943-065a-46e7-8f17-54a5edbc88eb","uniforme_product_naam":"identiteitskaart","doelgroep":"interne_organisatie","themas":[{"uuid":"619b8102-c476-4c38-af10-990990e6cf8f","naam":"Identificatie","beschrijving":"#
+        Identificatie\r\n\r\nLorem ipsum dolor sit amet\\, consectetur adipiscing
+        elit\\. Vestibulum porttitor pulvinar magna\\, at maximus diam maximus ut\\.
+        Pellentesque facilisis bibendum felis et mollis\\. Mauris at augue ligula\\.
+        Mauris viverra tempor eros\\, eu consequat risus lobortis scelerisque\\. Nam
+        et luctus sapien\\. Vestibulum feugiat vestibulum arcu\\, a eleifend purus
+        pharetra et\\. Sed scelerisque volutpat molestie\\. Mauris dapibus ex vel
+        turpis condimentum\\, non rhoncus nulla hendrerit\\. Mauris ipsum odio\\,
+        dapibus quis rutrum nec\\, sollicitudin ac sapien\\. Praesent gravida est
+        ipsum\\, a commodo risus vulputate eu\\. Quisque sollicitudin ex in leo fermentum
+        aliquet\\.","gepubliceerd":false,"aanmaak_datum":"2025-05-06T16:04:54.206000+02:00","update_datum":"2025-05-06T16:04:54.206000+02:00","hoofd_thema":null}],"locaties":[],"organisaties":[],"eigenaar":null,"contacten":[],"prijzen":[{"uuid":"55ed7060-0f46-4f04-9cb2-8dc494c83a92","prijsopties":[{"uuid":"29068829-c5cc-490a-80bc-a68675df7b85","bedrag":"120.95","beschrijving":"spoed"},{"uuid":"d14fe09b-1a6c-4a3a-918f-cddc925b4d6f","bedrag":"80.95","beschrijving":"normaal"}],"prijsregels":[],"actief_vanaf":"2025-05-06"}],"links":[{"uuid":"544d5ce0-a0d5-4a6b-9d06-ec88eba2b688","naam":"link
+        naar verdere informatie","url":"https://google.com"}],"acties":[],"bestanden":[],"naam":"Identiteitskaart","samenvatting":"Lorem
+        ipsum dolor sit amet\\, consectetur adipiscing elit\\. Vestibulum porttitor
+        pulvinar magna\\, at maximus diam maximus ut\\. Pellentesque facilisis bibendum
+        felis et mollis\\. Mauris at augue ligula\\. Mauris viverra tempor eros\\,
+        eu consequat risus lobortis scelerisque\\. Nam et luctus sapien\\. Vestibulum
+        feugiat vestibulum arcu\\, a eleifend purus pharetra et\\. Sed scelerisque
+        volutpat molestie\\. Mauris dapibus ex vel turpis condimentum\\, non rhoncus
+        nulla hendrerit\\. Mauris ipsum odio\\, dapibus quis rutrum nec\\, sollicitudin
+        ac sapien\\. Praesent gravida est ipsum\\, a commodo risus vulputate eu\\.
+        Quisque sollicitudin ex in leo fermentum aliquet\\.","taal":"nl","externe_codes":[{"naam":"ISO","code":"345"}],"parameters":[{"naam":"doelgroep","waarde":"inwoners"}],"verbruiksobject_schema":null,"dataobject_schema":{"naam":"Identiteitskaart-data","schema":{"type":"object","title":"identiteitskaart-data","required":["woonplaats","gemeente","documentnummer"],"properties":{"gemeente":{"type":"string"},"woonplaats":{"type":"string"},"documentnummer":{"type":"string"}},"additionalProperties":false}},"gepubliceerd":false,"publicatie_start_datum":null,"publicatie_eind_datum":null,"aanmaak_datum":"2025-05-06T16:09:07.040000+02:00","update_datum":"2025-05-06T16:12:26.010000+02:00","code":"IDENKAA","toegestane_statussen":["gereed","actief","ingetrokken","geweigerd","verlopen"],"keywords":["documenten"],"interne_opmerkingen":"Lorem
+        ipsum dolor sit amet\\, consectetur adipiscing elit\\. Vestibulum porttitor
+        pulvinar magna\\, at maximus diam maximus ut\\. Pellentesque facilisis bibendum
+        felis et mollis\\. Mauris at augue ligula\\. Mauris viverra tempor eros\\,
+        eu consequat risus lobortis scelerisque\\. Nam et luctus sapien\\. Vestibulum
+        feugiat vestibulum arcu\\, a eleifend purus pharetra et\\. Sed scelerisque
+        volutpat molestie\\. Mauris dapibus ex vel turpis condimentum\\, non rhoncus
+        nulla hendrerit\\. Mauris ipsum odio\\, dapibus quis rutrum nec\\, sollicitudin
+        ac sapien\\. Praesent gravida est ipsum\\, a commodo risus vulputate eu\\.
+        Quisque sollicitudin ex in leo fermentum aliquet\\.","zaaktypen":[{"urn":"urn:nld:maykin:openzaak:ztc:zaaktype:uuid:f981fe35-d517-4304-80b3-de5ceea18c32","url":null}],"verzoektypen":[{"urn":"urn:nld:maykin:openzaak:vtc:verzoektype:uuid:83f0348e-f0c6-4859-9f3b-69ba0833d674","url":null}],"processen":[{"urn":"urn:nld:maykin:openzaak:prc:process:uuid:12fda81b-1581-4aec-9597-0251ccb8877a","url":null}]},{"uuid":"9903945d-b639-49da-85ed-7305817f47ad","uniforme_product_naam":"parkeervergunning","doelgroep":"interne_organisatie","themas":[{"uuid":"ce3132cc-1c8f-4476-9ea6-1ff93e0ea9e4","naam":"Parkeren","beschrijving":"#
+        Parkeren\r\n\r\nLorem ipsum dolor sit amet\\, consectetur adipiscing elit\\.
+        Vestibulum porttitor pulvinar magna\\, at maximus diam maximus ut\\. Pellentesque
+        facilisis bibendum felis et mollis\\. Mauris at augue ligula\\. Mauris viverra
+        tempor eros\\, eu consequat risus lobortis scelerisque\\. Nam et luctus sapien\\.
+        Vestibulum feugiat vestibulum arcu\\, a eleifend purus pharetra et\\. Sed
+        scelerisque volutpat molestie\\. Mauris dapibus ex vel turpis condimentum\\,
+        non rhoncus nulla hendrerit\\. Mauris ipsum odio\\, dapibus quis rutrum nec\\,
+        sollicitudin ac sapien\\. Praesent gravida est ipsum\\, a commodo risus vulputate
+        eu\\. Quisque sollicitudin ex in leo fermentum aliquet\\.","gepubliceerd":false,"aanmaak_datum":"2025-04-11T17:53:55.104000+02:00","update_datum":"2025-05-06T16:04:18.684000+02:00","hoofd_thema":"cfac32d8-9ced-4b90-aa5c-46ea1cbfe04f"}],"locaties":[{"uuid":"8d06b015-da58-4f57-a6ca-98d3d8d5c588","naam":"Maykin","email":"","telefoonnummer":"1234","straat":"Kingsfordweg","huisnummer":"151","postcode":"1043
+        GR","stad":"Amsterdam"}],"organisaties":[{"uuid":"c07689b0-f853-484d-bb91-77af81435414","naam":"Maykin","code":"","email":"info@maykin.nl","telefoonnummer":"020
+        753 0","straat":"Kingsfordweg","huisnummer":"151","postcode":"1043 GR","stad":"Amsterdam"}],"eigenaar":null,"contacten":[{"uuid":"cf2b1d24-2985-4f88-a2f8-c6c0f8d5481f","organisatie":{"uuid":"c07689b0-f853-484d-bb91-77af81435414","naam":"Maykin","code":"","email":"info@maykin.nl","telefoonnummer":"020
+        753 0","straat":"Kingsfordweg","huisnummer":"151","postcode":"1043 GR","stad":"Amsterdam"},"naam":"Bob
+        de Vries","email":"bob@maykin.nl","telefoonnummer":"020 753 0","rol":"medewerker"}],"prijzen":[{"uuid":"d71a7ff5-32e4-4bb8-8293-44728ba60933","prijsopties":[],"prijsregels":[{"uuid":"7900dff8-4810-42f8-96cc-7d46e8ed6699","url":"https://gemeente.flowable-dmn.nl/flowable-rest/dmn-api/dmn-repository/6ebc1a69-17c6-42b9-9b11-df0c8291ef10","beschrijving":"parkeervergunning
+        prijs dmn tabel","mapping":null}],"actief_vanaf":"2025-05-06"}],"links":[{"uuid":"e0657949-d24a-4caf-a5cb-f0be55eb939d","naam":"link
+        naar verdere informatie","url":"https://google.com"}],"acties":[{"uuid":"28989af6-bf76-404c-87d5-3490e96a6993","naam":"verlengen","url":"https://gemeente.flowable-dmn.nl/flowable-rest/dmn-api/dmn-repository/340961bc-212b-49ac-aeb2-9bc38d442ff3","mapping":null}],"bestanden":[],"naam":"Parkeervergunning","samenvatting":"#
+        Parkeervergunning\r\n\r\nLorem ipsum dolor sit amet\\, consectetur adipiscing
+        elit\\. Vestibulum porttitor pulvinar magna\\, at maximus diam maximus ut\\.
+        Pellentesque facilisis bibendum felis et mollis\\. Mauris at augue ligula\\.
+        Mauris viverra tempor eros\\, eu consequat risus lobortis scelerisque\\. Nam
+        et luctus sapien\\. Vestibulum feugiat vestibulum arcu\\, a eleifend purus
+        pharetra et\\. Sed scelerisque volutpat molestie\\. Mauris dapibus ex vel
+        turpis condimentum\\, non rhoncus nulla hendrerit\\. Mauris ipsum odio\\,
+        dapibus quis rutrum nec\\, sollicitudin ac sapien\\. Praesent gravida est
+        ipsum\\, a commodo risus vulputate eu\\. Quisque sollicitudin ex in leo fermentum
+        aliquet\\.","taal":"nl","externe_codes":[{"naam":"ISO","code":"123"}],"parameters":[{"naam":"doelgroep","waarde":"inwoners"}],"verbruiksobject_schema":{"naam":"parkeervergunning-verbruik","schema":{"type":"array","items":{"type":"object","required":["datum","parkeerplaats"],"properties":{"datum":{"type":"string"},"parkeerplaats":{"type":"string"}}}}},"dataobject_schema":{"naam":"parkeervergunning-data","schema":{"type":"object","title":"parkeervergunning-data","required":["kenteken"],"properties":{"kenteken":{"type":"string"}},"additionalProperties":false}},"gepubliceerd":false,"publicatie_start_datum":null,"publicatie_eind_datum":null,"aanmaak_datum":"2025-05-06T16:00:31.967000+02:00","update_datum":"2025-05-06T16:11:53.460000+02:00","code":"PARKVER","toegestane_statussen":["actief","verlopen"],"keywords":["auto"],"interne_opmerkingen":"Lorem
+        ipsum dolor sit amet\\, consectetur adipiscing elit\\. Vestibulum porttitor
+        pulvinar magna\\, at maximus diam maximus ut\\. Pellentesque facilisis bibendum
+        felis et mollis\\. Mauris at augue ligula\\. Mauris viverra tempor eros\\,
+        eu consequat risus lobortis scelerisque\\. Nam et luctus sapien\\. Vestibulum
+        feugiat vestibulum arcu\\, a eleifend purus pharetra et\\. Sed scelerisque
+        volutpat molestie\\. Mauris dapibus ex vel turpis condimentum\\, non rhoncus
+        nulla hendrerit\\. Mauris ipsum odio\\, dapibus quis rutrum nec\\, sollicitudin
+        ac sapien\\. Praesent gravida est ipsum\\, a commodo risus vulputate eu\\.
+        Quisque sollicitudin ex in leo fermentum aliquet\\.","zaaktypen":[{"urn":"urn:nld:maykin:openzaak:ztc:zaaktype:uuid:81d4b529-5d7c-4ac9-b585-2f7dc260389b","url":null}],"verzoektypen":[],"processen":[]}]}'
+    headers:
+      API-version:
+      - 1.7.0
+      Allow:
+      - GET, POST, HEAD, OPTIONS
+      Content-Language:
+      - nl
+      Content-Length:
+      - '9149'
+      Content-Security-Policy:
+      - 'default-src ''self''; base-uri ''self''; frame-src ''self''; font-src ''self''
+        fonts.gstatic.com; img-src ''self'' data: cdn.redoc.ly; style-src ''self''
+        ''unsafe-inline'' fonts.googleapis.com; frame-ancestors ''none''; worker-src
+        ''self'' blob:; script-src ''self'' ''unsafe-inline''; object-src ''none'';
+        form-action ''self'''
+      Content-Type:
+      - application/json
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Referrer-Policy:
+      - same-origin
+      Vary:
+      - Accept-Language, origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+    status:
+      code: 200
+      message: OK
+version: 1
