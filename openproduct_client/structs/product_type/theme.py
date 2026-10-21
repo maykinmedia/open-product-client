@@ -1,6 +1,6 @@
 from msgspec import UNSET, UnsetType
 
-from ...types.base_resources import BaseTypeWithResourceMeta, PaginationParams
+from ..base import BaseSchemaStruct, PaginationParams
 from .common import ProductTypeAllowedStates
 
 #
@@ -31,7 +31,7 @@ class ContentThemeParams(PaginationParams):
 #
 
 
-class NestedProductType(BaseTypeWithResourceMeta):
+class NestedProductType(BaseSchemaStruct):
     uuid: str
     code: str
     naam: str
@@ -46,7 +46,7 @@ class NestedProductType(BaseTypeWithResourceMeta):
     publicatie_eind_datum: str | None = None  # a date string (2019-09-24)
 
 
-class Theme(BaseTypeWithResourceMeta):
+class Theme(BaseSchemaStruct):
     uuid: str
     naam: str
     beschrijving: str | None = None

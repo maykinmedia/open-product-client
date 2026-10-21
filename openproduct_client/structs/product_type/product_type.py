@@ -3,7 +3,7 @@ from typing import Literal
 
 from msgspec import UNSET, UnsetType
 
-from ...types.base_resources import BaseTypeWithResourceMeta, PaginationParams
+from ..base import BaseSchemaStruct, PaginationParams
 from . import PriceOption, PriceRule
 from .common import ProductTypeAllowedStates
 
@@ -19,27 +19,27 @@ type TargetGroupOptions = Literal[
 #
 
 
-class NestedExternalCode(BaseTypeWithResourceMeta):
+class NestedExternalCode(BaseSchemaStruct):
     naam: str
     code: str
 
 
-class NestedParameters(BaseTypeWithResourceMeta):
+class NestedParameters(BaseSchemaStruct):
     naam: str
     waarde: str
 
 
-class NestedCaseType(BaseTypeWithResourceMeta):
+class NestedCaseType(BaseSchemaStruct):
     urn: str | None = None
     url: str | None = None  # uri
 
 
-class NestedRequestType(BaseTypeWithResourceMeta):
+class NestedRequestType(BaseSchemaStruct):
     urn: str | None = None
     url: str | None = None  # uri
 
 
-class NestedProcess(BaseTypeWithResourceMeta):
+class NestedProcess(BaseSchemaStruct):
     urn: str | None = None
     url: str | None = None  # uri
 
@@ -68,7 +68,7 @@ class ContentParams(PaginationParams):
     labels: list[str] | UnsetType = UNSET
 
 
-class ProductTypeCreateData(BaseTypeWithResourceMeta):
+class ProductTypeCreateData(BaseSchemaStruct):
     uniforme_product_naam: str | None = None
     doelgroep: TargetGroupOptions
     thema_uuids: list[str] | UnsetType = UNSET
@@ -94,7 +94,7 @@ class ProductTypeCreateData(BaseTypeWithResourceMeta):
     processen: list[NestedProcess] | UnsetType = UNSET
 
 
-class ProductTypePartialUpdateData(BaseTypeWithResourceMeta):
+class ProductTypePartialUpdateData(BaseSchemaStruct):
     uniforme_product_naam: str | None = None
     doelgroep: TargetGroupOptions | UnsetType = UNSET
     thema_uuids: list[str] | UnsetType = UNSET
@@ -125,7 +125,7 @@ class ProductTypePartialUpdateData(BaseTypeWithResourceMeta):
 #
 
 
-class NestedContentElement(BaseTypeWithResourceMeta):
+class NestedContentElement(BaseSchemaStruct):
     uuid: str
     taal: str
     content: str
@@ -133,7 +133,7 @@ class NestedContentElement(BaseTypeWithResourceMeta):
     labels: list[str] | UnsetType = UNSET
 
 
-class NestedTheme(BaseTypeWithResourceMeta):
+class NestedTheme(BaseSchemaStruct):
     uuid: str
     naam: str
     beschrijving: str | UnsetType = UNSET
@@ -143,7 +143,7 @@ class NestedTheme(BaseTypeWithResourceMeta):
     hoofd_thema: str | None = None
 
 
-class Location(BaseTypeWithResourceMeta):
+class Location(BaseSchemaStruct):
     uuid: str
     naam: str
     email: str | UnsetType = UNSET
@@ -154,7 +154,7 @@ class Location(BaseTypeWithResourceMeta):
     stad: str | UnsetType = UNSET
 
 
-class Organization(BaseTypeWithResourceMeta):
+class Organization(BaseSchemaStruct):
     uuid: str
     naam: str
     code: str
@@ -166,7 +166,7 @@ class Organization(BaseTypeWithResourceMeta):
     stad: str | UnsetType = UNSET
 
 
-class Contact(BaseTypeWithResourceMeta):
+class Contact(BaseSchemaStruct):
     uuid: str
     organisatie: Organization | None = None
     naam: str
@@ -175,20 +175,20 @@ class Contact(BaseTypeWithResourceMeta):
     rol: str | UnsetType = UNSET
 
 
-class NestedPrice(BaseTypeWithResourceMeta):
+class NestedPrice(BaseSchemaStruct):
     uuid: str
     prijsopties: list[PriceOption] | UnsetType = UNSET
     prijsregels: list[PriceRule] | UnsetType = UNSET
     actief_vanaf: str  # a date string (2019-09-24)
 
 
-class NestedLink(BaseTypeWithResourceMeta):
+class NestedLink(BaseSchemaStruct):
     uuid: str
     naam: str
     url: str  # uri
 
 
-class NestedAction(BaseTypeWithResourceMeta):
+class NestedAction(BaseSchemaStruct):
     uuid: str
     naam: str
     url: str  # uri
@@ -197,22 +197,22 @@ class NestedAction(BaseTypeWithResourceMeta):
     )
 
 
-class NestedFile(BaseTypeWithResourceMeta):
+class NestedFile(BaseSchemaStruct):
     uuid: str
     bestand: str  # uri
 
 
-class ConsumableSchema(BaseTypeWithResourceMeta):
+class ConsumableSchema(BaseSchemaStruct):
     naam: str
     schema: Mapping
 
 
-class DataObjectSchema(BaseTypeWithResourceMeta):
+class DataObjectSchema(BaseSchemaStruct):
     naam: str
     schema: Mapping
 
 
-class ProductType(BaseTypeWithResourceMeta):
+class ProductType(BaseSchemaStruct):
     uuid: str
     uniforme_product_naam: str | None = None
     doelgroep: TargetGroupOptions

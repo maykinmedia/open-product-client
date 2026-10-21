@@ -2,6 +2,7 @@ import uuid
 from collections.abc import Sequence
 from typing import ClassVar
 
+from ...structs.base import PaginatedResponseBody
 from ...structs.product_type import (
     ContentParams,
     NestedContentElement,
@@ -10,7 +11,6 @@ from ...structs.product_type import (
     ProductTypeParams,
     ProductTypePartialUpdateData,
 )
-from ...types.base_resources import PaginatedResponseBody
 from ..base import BaseResource
 
 

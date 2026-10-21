@@ -1,7 +1,7 @@
 from typing import ClassVar
 
+from ...structs.base import PaginatedResponseBody, PaginationParams
 from ...structs.product_type import ContentLabel
-from ...types.base_resources import PaginatedResponseBody, PaginationParams
 from ..base import BaseResource
 
 

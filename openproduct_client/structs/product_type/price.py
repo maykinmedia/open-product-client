@@ -3,7 +3,7 @@ from typing import Literal
 
 from msgspec import UNSET, UnsetType
 
-from ...types.base_resources import BaseTypeWithResourceMeta
+from ..base import BaseSchemaStruct
 
 type DMNClassType = Literal[
     "String",
@@ -19,7 +19,7 @@ type DMNClassType = Literal[
 #
 
 
-class PriceParams(BaseTypeWithResourceMeta):
+class PriceParams(BaseSchemaStruct):
     # these are some of the available query parameters, append when/if needed
     actief_vanaf: str | UnsetType = UNSET
     actief_vanaf__gte: str | UnsetType = UNSET  # a date string (2019-09-24)
@@ -32,19 +32,19 @@ class PriceParams(BaseTypeWithResourceMeta):
 #
 
 
-class PriceOption(BaseTypeWithResourceMeta):
+class PriceOption(BaseSchemaStruct):
     uuid: str | UnsetType = UNSET
     bedrag: str  # a decimal, with '.' as decimal separator
     beschrijving: str
 
 
-class DMNMapping(BaseTypeWithResourceMeta):
+class DMNMapping(BaseSchemaStruct):
     name: str
     path: str
     classType: DMNClassType
 
 
-class PriceRule(BaseTypeWithResourceMeta):
+class PriceRule(BaseSchemaStruct):
     uuid: str | UnsetType = UNSET
     url: str  # uri
     beschrijving: str
@@ -53,7 +53,7 @@ class PriceRule(BaseTypeWithResourceMeta):
     )
 
 
-class Price(BaseTypeWithResourceMeta):
+class Price(BaseSchemaStruct):
     uuid: str
     producttype_uuid: str
     prijsopties: Sequence[PriceOption] | UnsetType = UNSET

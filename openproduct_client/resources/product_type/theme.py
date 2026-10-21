@@ -1,10 +1,10 @@
 from typing import ClassVar
 
+from ...structs.base import PaginatedResponseBody
 from ...structs.product_type import (
     Theme,
     ThemeParams,
 )
-from ...types.base_resources import PaginatedResponseBody
 from ..base import BaseResource
 
 

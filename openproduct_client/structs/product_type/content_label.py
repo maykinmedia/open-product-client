@@ -1,9 +1,9 @@
-from ...types.base_resources import BaseTypeWithResourceMeta
+from ..base import BaseSchemaStruct
 
 #
 # Output
 #
 
 
-class ContentLabel(BaseTypeWithResourceMeta):
+class ContentLabel(BaseSchemaStruct):
     naam: str

@@ -7,7 +7,7 @@ from typing import TYPE_CHECKING
 import msgspec
 import requests
 
-from ..types.base_resources import PaginatedResponseBody
+from ..structs.base import BaseSchemaStruct, PaginatedResponseBody
 
 if TYPE_CHECKING:
     from ..clients import OpenProductClient
@@ -16,7 +16,7 @@ if TYPE_CHECKING:
 logger = logging.getLogger(__name__)
 
 
-class BaseResource[T: msgspec.Struct]:
+class BaseResource[T: BaseSchemaStruct]:
     http_client: OpenProductClient
 
     def __init__(self, http_client: OpenProductClient):

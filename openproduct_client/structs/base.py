@@ -1,4 +1,3 @@
-from abc import ABCMeta
 from collections.abc import Sequence
 from typing import dataclass_transform
 
@@ -6,9 +5,9 @@ from msgspec import UNSET, Struct, StructMeta, UnsetType
 
 
 @dataclass_transform(kw_only_default=True)
-class ResourceMeta(StructMeta, ABCMeta):
+class SchemaStructMeta(StructMeta):
     """
-    Configure the behaviour of the resource classes.
+    Configure the behaviour of structs used to interface with the Open Product API.
 
     The metaclass avoids having to repeat a bunch of keyword arguments when defining
     msgspec structs. In particular, we establish:
@@ -23,16 +22,22 @@ class ResourceMeta(StructMeta, ABCMeta):
         return cls
 
 
-class BaseTypeWithResourceMeta(Struct, metaclass=ResourceMeta):
-    pass
+class BaseSchemaStruct(Struct, metaclass=SchemaStructMeta):
+    """
+    Base class for any struct definition used in the client.
+
+    The base class must be used to model API resources, response shapes, (query)
+    parameters... Essentially anything that lives under the ``components`` key in the
+    OpenAPI specification must inherit from this base class.
+    """
 
 
-class PaginationParams(BaseTypeWithResourceMeta):
+class PaginationParams(BaseSchemaStruct):
     page: int | UnsetType = UNSET
     page_size: int | UnsetType = UNSET
 
 
-class PaginatedResponseBody[T: Struct](BaseTypeWithResourceMeta):
+class PaginatedResponseBody[T: BaseSchemaStruct](BaseSchemaStruct):
     count: int
     next: str | None
     previous: str | None
