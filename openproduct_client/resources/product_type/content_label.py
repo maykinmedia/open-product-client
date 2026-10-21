@@ -5,7 +5,7 @@ from ...structs.product_type import ContentLabel
 from ..base import BaseResource
 
 
-class ContentLabelResource(BaseResource[ContentLabel]):
+class ContentLabelResource(BaseResource):
     base_path: ClassVar[str] = "contentlabels"
 
     def list(
@@ -15,8 +15,4 @@ class ContentLabelResource(BaseResource[ContentLabel]):
         Get all the available content labels (based on query parameters).
         """
         response = self._get(self.base_path, params=params)
-        result = self.process_response(response, ContentLabel)
-
-        assert isinstance(result, PaginatedResponseBody)
-
-        return result
+        return self.process_response(response, PaginatedResponseBody[ContentLabel])

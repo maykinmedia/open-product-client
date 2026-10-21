@@ -5,7 +5,7 @@ from ...structs.product_type import Price, PriceParams
 from ..base import BaseResource
 
 
-class PriceResource(BaseResource[Price]):
+class PriceResource(BaseResource):
     base_path: ClassVar[str] = "prijzen"
 
     def list(
@@ -15,8 +15,4 @@ class PriceResource(BaseResource[Price]):
         Get all the available prices (based on query parameters).
         """
         response = self._get(self.base_path, params=params)
-        result = self.process_response(response, Price)
-
-        assert isinstance(result, PaginatedResponseBody)
-
-        return result
+        return self.process_response(response, PaginatedResponseBody[Price])

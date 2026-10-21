@@ -8,7 +8,7 @@ from ...structs.product_type import (
 from ..base import BaseResource
 
 
-class ThemeResource(BaseResource[Theme]):
+class ThemeResource(BaseResource):
     base_path: ClassVar[str] = "themas"
 
     def list(
@@ -18,8 +18,4 @@ class ThemeResource(BaseResource[Theme]):
         Get all the available themes (based on query parameters).
         """
         response = self._get(self.base_path, params=params)
-        result = self.process_response(response, Theme)
-
-        assert isinstance(result, PaginatedResponseBody)
-
-        return result
+        return self.process_response(response, PaginatedResponseBody[Theme])

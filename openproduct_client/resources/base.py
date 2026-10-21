@@ -1,13 +1,11 @@
 from __future__ import annotations
 
 import logging
-from collections.abc import Mapping, Sequence
+from collections.abc import Mapping
 from typing import TYPE_CHECKING
 
 import msgspec
 import requests
-
-from ..structs.base import BaseSchemaStruct, PaginatedResponseBody
 
 if TYPE_CHECKING:
     from ..clients import OpenProductClient
@@ -16,28 +14,20 @@ if TYPE_CHECKING:
 logger = logging.getLogger(__name__)
 
 
-class BaseResource[T: BaseSchemaStruct]:
+class BaseResource:
     http_client: OpenProductClient
 
     def __init__(self, http_client: OpenProductClient):
         self.http_client = http_client
 
     @staticmethod
-    def process_response(
+    def process_response[T](
         response: requests.Response,
         struct_type: type[T],
-    ) -> T | PaginatedResponseBody[T] | Sequence[T]:
+    ) -> T:
         response_data = response.json()
-
-        if isinstance(response_data, list):
-            return msgspec.convert(response_data, type=list[struct_type])
-
-        return msgspec.json.decode(
-            response.content,
-            type=PaginatedResponseBody[struct_type]
-            if "next" in response_data
-            else struct_type,
-        )
+        # for now: assume no errors :)
+        return msgspec.convert(response_data, type=struct_type)
 
     def _get(
         self,
