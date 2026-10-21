@@ -1,4 +1,5 @@
 from collections.abc import Mapping
+from datetime import date, datetime
 from typing import Literal
 
 from msgspec import UNSET, UnsetType
@@ -51,7 +52,7 @@ class NestedProcess(BaseSchemaStruct):
 
 class ProductTypeParams(PaginationParams):
     # these are some of the available query parameters, append when/if needed
-    aanmaak_datum: str | UnsetType = (
+    aanmaak_datum: datetime | UnsetType = (
         UNSET  # a date-time ISO 8601 string (2019-08-24T14:15:22Z)
     )
     code: str | UnsetType = UNSET
@@ -138,8 +139,8 @@ class NestedTheme(BaseSchemaStruct):
     naam: str
     beschrijving: str | UnsetType = UNSET
     gepubliceerd: bool | UnsetType = UNSET
-    aanmaak_datum: str  # a date-time ISO 8601 string (2019-08-24T14:15:22Z)
-    update_datum: str  # a date-time ISO 8601 string (2019-08-24T14:15:22Z)
+    aanmaak_datum: datetime  # a date-time ISO 8601 string (2019-08-24T14:15:22Z)
+    update_datum: datetime  # a date-time ISO 8601 string (2019-08-24T14:15:22Z)
     hoofd_thema: str | None = None
 
 
@@ -179,7 +180,7 @@ class NestedPrice(BaseSchemaStruct):
     uuid: str
     prijsopties: list[PriceOption] | UnsetType = UNSET
     prijsregels: list[PriceRule] | UnsetType = UNSET
-    actief_vanaf: str  # a date string (2019-09-24)
+    actief_vanaf: date  # a date string (2019-09-24)
 
 
 class NestedLink(BaseSchemaStruct):
@@ -233,10 +234,10 @@ class ProductType(BaseSchemaStruct):
     verbruiksobject_schema: ConsumableSchema | None
     dataobject_schema: DataObjectSchema | None
     gepubliceerd: bool
-    publicatie_start_datum: str | None = None  # a date string (2019-09-24)
-    publicatie_eind_datum: str | None = None  # a date string (2019-09-24)
-    aanmaak_datum: str  # a date-time ISO 8601 string (2019-08-24T14:15:22Z)
-    update_datum: str  # a date-time ISO 8601 string (2019-08-24T14:15:22Z)
+    publicatie_start_datum: date | None = None  # a date string (2019-09-24)
+    publicatie_eind_datum: date | None = None  # a date string (2019-09-24)
+    aanmaak_datum: datetime  # a date-time ISO 8601 string (2019-08-24T14:15:22Z)
+    update_datum: datetime  # a date-time ISO 8601 string (2019-08-24T14:15:22Z)
     code: str
     toegestane_statussen: list[ProductTypeAllowedStates] | UnsetType = UNSET
     keywords: list[str] | UnsetType = UNSET
