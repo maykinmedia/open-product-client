@@ -22,7 +22,7 @@ class OpenProductClient(APIClient):
         self,
         base_url: str,
         *,
-        token: str,
+        token: str = "",
         language_code: Literal["nl", "en"] = "nl",
         request_kwargs: MutableMapping[str, object] | None = None,
         **kwargs,
@@ -34,7 +34,9 @@ class OpenProductClient(APIClient):
 
         assert isinstance(request_kwargs["headers"], MutableMapping)
 
-        request_kwargs["headers"]["Authorization"] = f"Token {token}"
+        if token:
+            request_kwargs["headers"]["Authorization"] = f"Token {token}"
+
         request_kwargs["headers"]["Accept-Language"] = language_code
 
         super().__init__(base_url=base_url, request_kwargs=request_kwargs)  # pyright: ignore[reportArgumentType]

@@ -84,8 +84,8 @@ class ProductTypeCreateData(BaseSchemaStruct):
     parameters: list[NestedParameters] | UnsetType = UNSET
     verbruiksobject_schema_naam: str | UnsetType = UNSET
     dataobject_schema_naam: str | UnsetType = UNSET
-    publicatie_start_datum: str | None = None
-    publicatie_eind_datum: str | None = None
+    publicatie_start_datum: date | None = None  # a date string (2019-09-24)
+    publicatie_eind_datum: date | None = None  # a date string (2019-09-24)
     code: str
     toegestane_statussen: list[ProductTypeAllowedStates] | UnsetType = UNSET
     keywords: list[str] | UnsetType = UNSET
@@ -110,8 +110,8 @@ class ProductTypePartialUpdateData(BaseSchemaStruct):
     parameters: list[NestedParameters] | UnsetType = UNSET
     verbruiksobject_schema_naam: str | UnsetType = UNSET
     dataobject_schema_naam: str | UnsetType = UNSET
-    publicatie_start_datum: str | None = None
-    publicatie_eind_datum: str | None = None
+    publicatie_start_datum: date | None = None  # a date string (2019-09-24)
+    publicatie_eind_datum: date | None = None  # a date string (2019-09-24)
     code: str | UnsetType = UNSET
     toegestane_statussen: list[ProductTypeAllowedStates] | UnsetType = UNSET
     keywords: list[str] | UnsetType = UNSET

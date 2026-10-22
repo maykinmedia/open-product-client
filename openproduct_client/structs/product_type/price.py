@@ -1,4 +1,5 @@
 from collections.abc import Mapping, Sequence
+from datetime import date
 from typing import Literal
 
 from msgspec import UNSET, UnsetType
@@ -21,9 +22,9 @@ type DMNClassType = Literal[
 
 class PriceParams(BaseSchemaStruct):
     # these are some of the available query parameters, append when/if needed
-    actief_vanaf: str | UnsetType = UNSET
-    actief_vanaf__gte: str | UnsetType = UNSET  # a date string (2019-09-24)
-    actief_vanaf__lte: str | UnsetType = UNSET  # a date string (2019-09-24)
+    actief_vanaf: date | UnsetType = UNSET  # a date string (2019-09-24)
+    actief_vanaf__gte: date | UnsetType = UNSET  # a date string (2019-09-24)
+    actief_vanaf__lte: date | UnsetType = UNSET  # a date string (2019-09-24)
     producttype__uuid: str | UnsetType = UNSET
 
 
@@ -58,4 +59,4 @@ class Price(BaseSchemaStruct):
     producttype_uuid: str
     prijsopties: Sequence[PriceOption] | UnsetType = UNSET
     prijsregels: Sequence[PriceRule] | UnsetType = UNSET
-    actief_vanaf: str  # a date string (2019-09-24)
+    actief_vanaf: date  # a date string (2019-09-24)
