@@ -7,10 +7,9 @@ Open Product Client
 :Source: https://github.com/maykinmedia/open-product-client
 :Keywords: Open Product API, Client, producten, producttypen
 
-|build-status|
 Currently compatible with Open Product 1.7.0
 
-|python-versions| |pypi-version|
+|build-status| |coverage| |python-versions| |pypi-version|
 
 About
 =====
@@ -48,10 +47,16 @@ Licensed under the `MIT`_.
 .. _`MIT`: LICENSE
 .. _`Open Product API`: https://github.com/maykinmedia/open-product
 
-.. |build-status| 
+.. |build-status| image:: https://github.com/maykinmedia/open-product-client/actions/workflows/ci.yml/badge.svg
+    :alt: Build status
+    :target: https://github.com/maykinmedia/open-product-client/actions/workflows/ci.yml
+
+.. |coverage| image:: https://codecov.io/gh/maykinmedia/open-product-client/branch/main/graph/badge.svg
+    :target: https://codecov.io/gh/maykinmedia/open-product-client
+    :alt: Coverage status
 
 .. |python-versions| image:: https://img.shields.io/badge/python-3.12-blue.svg
     :alt: Supported Python versions
 
-
-# TODO
+.. |pypi-version| image:: https://img.shields.io/pypi/v/open_product_client.svg
+    :target: https://pypi.org/project/open_product_client/
