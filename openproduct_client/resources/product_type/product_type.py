@@ -11,7 +11,7 @@ from ...structs.product_type import (
     ProductTypeParams,
     ProductTypePartialUpdateData,
 )
-from ..base import BaseResource
+from ..base import BaseResource, make_list_iter
 
 
 class ProductTypeResource(BaseResource):
@@ -25,6 +25,8 @@ class ProductTypeResource(BaseResource):
         """
         response = self._get(self.base_path, params=params)
         return self.process_response(response, PaginatedResponseBody[ProductType])
+
+    list_iter = make_list_iter(list, item_type=ProductType)
 
     def retrieve(self, /, uuid: str | uuid.UUID) -> ProductType:
         """
