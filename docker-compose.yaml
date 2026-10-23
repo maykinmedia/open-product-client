@@ -5,7 +5,7 @@ services:
       - POSTGRES_HOST_AUTH_METHOD=trust
 
   web:
-    image: maykinmedia/open-product:${TAG:-stable}
+    image: maykinmedia/open-product:${TAG:-1.9.0}
     pull_policy: always
     environment: &web-env
       - DJANGO_SETTINGS_MODULE=openproduct.conf.docker
