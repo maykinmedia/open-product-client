@@ -29,9 +29,9 @@ Features
     :alt: Build status
     :target: https://github.com/maykinmedia/open-product-client/actions/workflows/ci.yml
 
-.. |code-quality| image:: https://github.com/maykinmedia/open-product-client/workflows/Code quality checks/badge.svg
+.. |code-quality| image:: https://github.com/maykinmedia/open-product-client/actions/workflows/code-quality.yml/badge.svg
      :alt: Code quality checks
-     :target: https://github.com/maykinmedia/open-product-client/actions?query=workflow%3A%22Code+quality+checks%22
+     :target: https://github.com/maykinmedia/open-product-client/actions/workflows/code-quality.yml
 
 .. |ruff| image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
     :target: https://github.com/astral-sh/ruff
