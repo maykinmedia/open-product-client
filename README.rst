@@ -22,31 +22,12 @@ Introduction
 Open Product Client is a strongly typed HTTP client library for the `Open Product <https://github.com/maykinmedia/open-product>`_ 
 API. For installation and usage instructions, see the `documentation <https://open-product-client.readthedocs.io/en/latest/?badge=latest>`_.
 
-Requirements
-============
+Installation and usage
+======================
 
-* Python 3.12 or newer
+See the `docs <https://open-product-client.readthedocs.io/>`_.
 
-Dependencies
-============
-
-* ape-pie
-* msgspec
-
-Installation
-============
-
-.. code-block:: bash
-
-    uv pip install open-product-client
-
-
-Usage
-=====
-
-See `Usage` in :doc:`Quickstart <quickstart>` for the complete guide.
-
-Licence
+License
 =======
 
 Licensed under the `MIT`_.

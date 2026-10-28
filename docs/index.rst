@@ -18,7 +18,6 @@ Features
 .. toctree::
    :maxdepth: 2
 
-   readme
    quickstart
    developers
    testing
