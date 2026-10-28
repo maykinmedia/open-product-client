@@ -9,7 +9,7 @@ from ..base import BaseResource
 
 
 class ThemeResource(BaseResource):
-    base_path: ClassVar[str] = "themas"
+    base_path: ClassVar[str] = "producttypen/api/v1/themas"
 
     def list(
         self, *, params: ThemeParams | None = None

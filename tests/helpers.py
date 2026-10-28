@@ -4,7 +4,6 @@ import subprocess
 import time
 from contextlib import contextmanager
 from pathlib import Path
-from urllib.parse import urljoin
 
 import requests
 
@@ -20,7 +19,6 @@ class OpenProductServiceManager:
     _in_server_context: bool = False
     _django_service_name: str = "web"
     _api_root: str = "http://localhost:8339"
-    _api_path: str = "/producttypen/api/v1"
     _api_token: str = "75167ed1457337f6c27022ae772ba79a351b053a"
     _docker_compose_project_name: str = "openproduct-api-test"
     _docker_compose_path: Path = BASE_DIR / "docker-compose.yaml"
@@ -132,13 +130,9 @@ class OpenProductServiceManager:
         self._service_teardown()
         self._in_server_context = False
 
-    @property
-    def api_url(self):
-        return urljoin(self._api_root, self._api_path)
-
     def client_factory(self):
         return OpenProductClient(
-            base_url=self.api_url,
+            base_url=self._api_root,
             token=self._api_token,
         )
 

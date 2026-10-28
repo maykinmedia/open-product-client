@@ -17,7 +17,7 @@ interactions:
     uri: http://localhost:8339/producttypen/api/v1/producttypen
   response:
     body:
-      string: '{"uuid":"d2b96dae-91c7-4106-b677-3092062cf961","uniforme_product_naam":null,"doelgroep":"interne_organisatie","themas":[{"uuid":"ce3132cc-1c8f-4476-9ea6-1ff93e0ea9e4","naam":"Parkeren","beschrijving":"#
+      string: '{"uuid":"c735fd93-92b9-4ea6-b6bc-c822cfc96458","uniforme_product_naam":null,"doelgroep":"interne_organisatie","themas":[{"uuid":"ce3132cc-1c8f-4476-9ea6-1ff93e0ea9e4","naam":"Parkeren","beschrijving":"#
         Parkeren\r\n\r\nLorem ipsum dolor sit amet\\, consectetur adipiscing elit\\.
         Vestibulum porttitor pulvinar magna\\, at maximus diam maximus ut\\. Pellentesque
         facilisis bibendum felis et mollis\\. Mauris at augue ligula\\. Mauris viverra
@@ -26,7 +26,7 @@ interactions:
         scelerisque volutpat molestie\\. Mauris dapibus ex vel turpis condimentum\\,
         non rhoncus nulla hendrerit\\. Mauris ipsum odio\\, dapibus quis rutrum nec\\,
         sollicitudin ac sapien\\. Praesent gravida est ipsum\\, a commodo risus vulputate
-        eu\\. Quisque sollicitudin ex in leo fermentum aliquet\\.","gepubliceerd":false,"aanmaak_datum":"2025-04-11T17:53:55.104000+02:00","update_datum":"2025-05-06T16:04:18.684000+02:00","hoofd_thema":"cfac32d8-9ced-4b90-aa5c-46ea1cbfe04f"}],"locaties":[],"organisaties":[],"eigenaar":null,"contacten":[],"prijzen":[],"links":[],"acties":[],"bestanden":[],"naam":"product-type-to-delete","samenvatting":"test-delete","taal":"nl","externe_codes":[],"parameters":[],"verbruiksobject_schema":null,"dataobject_schema":null,"gepubliceerd":false,"publicatie_start_datum":null,"publicatie_eind_datum":null,"aanmaak_datum":"2026-10-21T13:23:57.312301+02:00","update_datum":"2026-10-21T13:23:57.312318+02:00","code":"DELETE","toegestane_statussen":[],"keywords":[],"interne_opmerkingen":"","zaaktypen":[],"verzoektypen":[],"processen":[]}'
+        eu\\. Quisque sollicitudin ex in leo fermentum aliquet\\.","gepubliceerd":false,"aanmaak_datum":"2025-04-11T17:53:55.104000+02:00","update_datum":"2025-05-06T16:04:18.684000+02:00","hoofd_thema":"cfac32d8-9ced-4b90-aa5c-46ea1cbfe04f"}],"locaties":[],"organisaties":[],"eigenaar":null,"contacten":[],"prijzen":[],"links":[],"acties":[],"bestanden":[],"naam":"product-type-to-delete","samenvatting":"test-delete","taal":"nl","externe_codes":[],"parameters":[],"verbruiksobject_schema":null,"dataobject_schema":null,"gepubliceerd":false,"publicatie_start_datum":null,"publicatie_eind_datum":null,"aanmaak_datum":"2026-10-28T16:47:26.521679+01:00","update_datum":"2026-10-28T16:47:26.521690+01:00","code":"DELETE","toegestane_statussen":[],"keywords":[],"interne_opmerkingen":"","zaaktypen":[],"verzoektypen":[],"processen":[]}'
     headers:
       API-version:
       - 1.7.0
@@ -37,10 +37,11 @@ interactions:
       Content-Length:
       - '1658'
       Content-Security-Policy:
-      - 'object-src ''none''; frame-src ''self''; base-uri ''self''; worker-src ''self''
-        blob:; font-src ''self'' fonts.gstatic.com; default-src ''self''; frame-ancestors
-        ''none''; img-src ''self'' data: cdn.redoc.ly; script-src ''self'' ''unsafe-inline'';
-        form-action ''self''; style-src ''self'' ''unsafe-inline'' fonts.googleapis.com'
+      - 'default-src ''self''; img-src ''self'' data: cdn.redoc.ly; worker-src ''self''
+        blob:; frame-ancestors ''none''; object-src ''none''; script-src ''self''
+        ''unsafe-inline''; base-uri ''self''; font-src ''self'' fonts.gstatic.com;
+        frame-src ''self''; style-src ''self'' ''unsafe-inline'' fonts.googleapis.com;
+        form-action ''self'''
       Content-Type:
       - application/json
       Cross-Origin-Opener-Policy:
@@ -66,7 +67,7 @@ interactions:
       Content-Length:
       - '0'
     method: DELETE
-    uri: http://localhost:8339/producttypen/api/v1/producttypen/d2b96dae-91c7-4106-b677-3092062cf961
+    uri: http://localhost:8339/producttypen/api/v1/producttypen/c735fd93-92b9-4ea6-b6bc-c822cfc96458
   response:
     body:
       string: ''
@@ -80,10 +81,11 @@ interactions:
       Content-Length:
       - '0'
       Content-Security-Policy:
-      - 'object-src ''none''; frame-src ''self''; base-uri ''self''; worker-src ''self''
-        blob:; font-src ''self'' fonts.gstatic.com; default-src ''self''; frame-ancestors
-        ''none''; img-src ''self'' data: cdn.redoc.ly; script-src ''self'' ''unsafe-inline'';
-        form-action ''self''; style-src ''self'' ''unsafe-inline'' fonts.googleapis.com'
+      - 'default-src ''self''; img-src ''self'' data: cdn.redoc.ly; worker-src ''self''
+        blob:; frame-ancestors ''none''; object-src ''none''; script-src ''self''
+        ''unsafe-inline''; base-uri ''self''; font-src ''self'' fonts.gstatic.com;
+        frame-src ''self''; style-src ''self'' ''unsafe-inline'' fonts.googleapis.com;
+        form-action ''self'''
       Cross-Origin-Opener-Policy:
       - same-origin
       Referrer-Policy:
@@ -105,11 +107,11 @@ interactions:
       Authorization:
       - Token 75167ed1457337f6c27022ae772ba79a351b053a
     method: GET
-    uri: http://localhost:8339/producttypen/api/v1/producttypen/d2b96dae-91c7-4106-b677-3092062cf961
+    uri: http://localhost:8339/producttypen/api/v1/producttypen/c735fd93-92b9-4ea6-b6bc-c822cfc96458
   response:
     body:
       string: '{"type":"http://localhost:8339/ref/fouten/NotFound/","code":"not_found","title":"Niet
-        gevonden.","status":404,"detail":"Niet gevonden.","instance":"urn:uuid:308d846b-14ab-4494-a3cf-1d0042465811"}'
+        gevonden.","status":404,"detail":"Niet gevonden.","instance":"urn:uuid:efd9e01d-2365-4e05-990a-33ff7c8f32fa"}'
     headers:
       API-version:
       - 1.7.0
@@ -120,10 +122,11 @@ interactions:
       Content-Length:
       - '195'
       Content-Security-Policy:
-      - 'object-src ''none''; frame-src ''self''; base-uri ''self''; worker-src ''self''
-        blob:; font-src ''self'' fonts.gstatic.com; default-src ''self''; frame-ancestors
-        ''none''; img-src ''self'' data: cdn.redoc.ly; script-src ''self'' ''unsafe-inline'';
-        form-action ''self''; style-src ''self'' ''unsafe-inline'' fonts.googleapis.com'
+      - 'default-src ''self''; img-src ''self'' data: cdn.redoc.ly; worker-src ''self''
+        blob:; frame-ancestors ''none''; object-src ''none''; script-src ''self''
+        ''unsafe-inline''; base-uri ''self''; font-src ''self'' fonts.gstatic.com;
+        frame-src ''self''; style-src ''self'' ''unsafe-inline'' fonts.googleapis.com;
+        form-action ''self'''
       Content-Type:
       - application/json
       Cross-Origin-Opener-Policy:

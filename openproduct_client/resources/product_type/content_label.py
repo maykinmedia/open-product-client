@@ -6,7 +6,7 @@ from ..base import BaseResource
 
 
 class ContentLabelResource(BaseResource):
-    base_path: ClassVar[str] = "contentlabels"
+    base_path: ClassVar[str] = "producttypen/api/v1/contentlabels"
 
     def list(
         self, *, params: PaginationParams | None = None

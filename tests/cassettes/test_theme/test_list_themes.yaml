@@ -49,10 +49,11 @@ interactions:
       Content-Length:
       - '3720'
       Content-Security-Policy:
-      - 'object-src ''none''; frame-src ''self''; base-uri ''self''; worker-src ''self''
-        blob:; font-src ''self'' fonts.gstatic.com; default-src ''self''; frame-ancestors
-        ''none''; img-src ''self'' data: cdn.redoc.ly; script-src ''self'' ''unsafe-inline'';
-        form-action ''self''; style-src ''self'' ''unsafe-inline'' fonts.googleapis.com'
+      - 'default-src ''self''; img-src ''self'' data: cdn.redoc.ly; worker-src ''self''
+        blob:; frame-ancestors ''none''; object-src ''none''; script-src ''self''
+        ''unsafe-inline''; base-uri ''self''; font-src ''self'' fonts.gstatic.com;
+        frame-src ''self''; style-src ''self'' ''unsafe-inline'' fonts.googleapis.com;
+        form-action ''self'''
       Content-Type:
       - application/json
       Cross-Origin-Opener-Policy:

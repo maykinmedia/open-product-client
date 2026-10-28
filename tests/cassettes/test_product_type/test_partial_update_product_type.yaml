@@ -35,7 +35,7 @@ interactions:
         volutpat molestie\\. Mauris dapibus ex vel turpis condimentum\\, non rhoncus
         nulla hendrerit\\. Mauris ipsum odio\\, dapibus quis rutrum nec\\, sollicitudin
         ac sapien\\. Praesent gravida est ipsum\\, a commodo risus vulputate eu\\.
-        Quisque sollicitudin ex in leo fermentum aliquet\\.","taal":"nl","externe_codes":[{"naam":"ISO","code":"345"}],"parameters":[{"naam":"doelgroep","waarde":"inwoners"}],"verbruiksobject_schema":null,"dataobject_schema":{"naam":"Identiteitskaart-data","schema":{"type":"object","title":"identiteitskaart-data","required":["woonplaats","gemeente","documentnummer"],"properties":{"gemeente":{"type":"string"},"woonplaats":{"type":"string"},"documentnummer":{"type":"string"}},"additionalProperties":false}},"gepubliceerd":false,"publicatie_start_datum":null,"publicatie_eind_datum":null,"aanmaak_datum":"2025-05-06T16:09:07.040000+02:00","update_datum":"2026-10-21T13:23:28.205081+02:00","code":"IDENKAA","toegestane_statussen":["gereed","actief","ingetrokken","geweigerd","verlopen"],"keywords":["akeyword"],"interne_opmerkingen":"Lorem
+        Quisque sollicitudin ex in leo fermentum aliquet\\.","taal":"nl","externe_codes":[{"naam":"ISO","code":"345"}],"parameters":[{"naam":"doelgroep","waarde":"inwoners"}],"verbruiksobject_schema":null,"dataobject_schema":{"naam":"Identiteitskaart-data","schema":{"type":"object","title":"identiteitskaart-data","required":["woonplaats","gemeente","documentnummer"],"properties":{"gemeente":{"type":"string"},"woonplaats":{"type":"string"},"documentnummer":{"type":"string"}},"additionalProperties":false}},"gepubliceerd":false,"publicatie_start_datum":null,"publicatie_eind_datum":null,"aanmaak_datum":"2025-05-06T16:09:07.040000+02:00","update_datum":"2026-10-28T16:46:56.175094+01:00","code":"IDENKAA","toegestane_statussen":["gereed","actief","ingetrokken","geweigerd","verlopen"],"keywords":["akeyword"],"interne_opmerkingen":"Lorem
         ipsum dolor sit amet\\, consectetur adipiscing elit\\. Vestibulum porttitor
         pulvinar magna\\, at maximus diam maximus ut\\. Pellentesque facilisis bibendum
         felis et mollis\\. Mauris at augue ligula\\. Mauris viverra tempor eros\\,
@@ -55,10 +55,11 @@ interactions:
       Content-Length:
       - '4073'
       Content-Security-Policy:
-      - 'object-src ''none''; frame-src ''self''; base-uri ''self''; worker-src ''self''
-        blob:; font-src ''self'' fonts.gstatic.com; default-src ''self''; frame-ancestors
-        ''none''; img-src ''self'' data: cdn.redoc.ly; script-src ''self'' ''unsafe-inline'';
-        form-action ''self''; style-src ''self'' ''unsafe-inline'' fonts.googleapis.com'
+      - 'default-src ''self''; img-src ''self'' data: cdn.redoc.ly; worker-src ''self''
+        blob:; frame-ancestors ''none''; object-src ''none''; script-src ''self''
+        ''unsafe-inline''; base-uri ''self''; font-src ''self'' fonts.gstatic.com;
+        frame-src ''self''; style-src ''self'' ''unsafe-inline'' fonts.googleapis.com;
+        form-action ''self'''
       Content-Type:
       - application/json
       Cross-Origin-Opener-Policy:

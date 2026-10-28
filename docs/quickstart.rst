@@ -33,6 +33,6 @@ the provided resources:
     )
 
     with client:
-        product_types = client.list_product_types()
+        product_types = client.product_type.list()
     
     print(product_types.results)
