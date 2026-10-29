@@ -2,6 +2,15 @@
 Changelog
 =========
 
+0.4.0 (2026-10-29)
+==================
+
+New features
+------------
+
+* Updated resources and their specific paths.
+* Updated and added missing documentation.
+
 0.3.0 (2026-10-22)
 ==================
 
