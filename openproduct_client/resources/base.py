@@ -25,6 +25,12 @@ class BaseResource:
         response: requests.Response,
         struct_type: type[T],
     ) -> T:
+        """
+        All the needed processing on the retrieved data.
+
+        The JSON data is processed and converted to msgspec structs. This includes the
+        validation of the incoming data.
+        """
         response_data = response.json()
         # for now: assume no errors :)
         return msgspec.convert(response_data, type=struct_type)

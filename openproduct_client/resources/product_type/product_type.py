@@ -15,7 +15,7 @@ from ..base import BaseResource
 
 
 class ProductTypeResource(BaseResource):
-    base_path: ClassVar[str] = "producttypen"
+    base_path: ClassVar[str] = "producttypen/api/v1/producttypen"
 
     def list(
         self, *, params: ProductTypeParams | None = None

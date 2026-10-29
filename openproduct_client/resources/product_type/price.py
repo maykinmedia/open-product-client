@@ -6,7 +6,7 @@ from ..base import BaseResource
 
 
 class PriceResource(BaseResource):
-    base_path: ClassVar[str] = "prijzen"
+    base_path: ClassVar[str] = "producttypen/api/v1/prijzen"
 
     def list(
         self, *, params: PriceParams | None = None
