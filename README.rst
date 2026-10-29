@@ -1,7 +1,7 @@
 Welcome to Open Product Client's documentation
 ==============================================
 
-:Version: 0.3.0
+:Version: 0.4.0
 :Source: https://github.com/maykinmedia/open-product-client
 :Keywords: Open Product API, Client, producten, producttypen
 

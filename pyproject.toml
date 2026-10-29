@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "open-product-client"
-version = "0.3.0"
+version = "0.4.0"
 description = "API Client library to communicate with the Open Product service."
 authors = [
     {name = "Maykin", email = "support@maykinmedia.nl"}
@@ -65,7 +65,7 @@ markers = [
 ]
 
 [tool.bumpversion]
-current_version = "0.3.0"
+current_version = "0.4.0"
 files = [
     {filename = "pyproject.toml"},
     {filename = "README.rst"},
